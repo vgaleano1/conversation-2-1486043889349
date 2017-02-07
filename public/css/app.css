@@ -239,10 +239,15 @@ input:-moz-placeholder {
 
 #textInputDummy {
   position:absolute;
-  white-space:pre;
+  white-space:pre-line !important;
+  text-align: justify;
   top: 0;
   left: -1000%;
   opacity: 0;
+}
+
+textarea{
+	width: 100vw !important;
 }
 
 #payload-column {
@@ -279,9 +284,7 @@ input:-moz-placeholder {
 .hide {
   display: none;
 }
-textarea .input responsive-column underline{
-	width:100% !important;
-}
+
 .payload .line-numbers, .payload .payload-text {
   padding: 0.5rem;
   white-space: pre-line;

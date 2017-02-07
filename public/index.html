@@ -7,6 +7,7 @@
   <meta property="og:image" content="conversation.svg" />
   <meta property="og:title" content="Conversation Chat Simple" />
   <meta property="og:description" content="Sample application that shows how to use the Conversation API to identify user intents" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/app.css">
 </head>
@@ -20,9 +21,9 @@
       <div class="chat-column">
         <div id="scrollingChat"></div>
         <label for="textInput" class="inputOutline">
-          <input id="textInput" class="input responsive-column"
-            placeholder="Type something" type="text"
-            onkeydown="ConversationPanel.inputKeyDown(event, this)">
+          <textarea id="textInput" class="input responsive-column"
+            placeholder="Ingrese los datos" type="text" 
+            onkeydown="ConversationPanel.inputKeyDown(event, this)"></textarea>
         </label>
       </div>
     </div>

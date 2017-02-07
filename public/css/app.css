@@ -273,14 +273,18 @@ input:-moz-placeholder {
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383D3E;
+  text-align: center;
 }
 
 .hide {
   display: none;
 }
-
+textarea .input responsive-column underline{
+	width:100% !important;
+}
 .payload .line-numbers, .payload .payload-text {
   padding: 0.5rem;
+  white-space: pre-line;
 }
 
 .line-numbers {

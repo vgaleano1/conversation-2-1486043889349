@@ -9,7 +9,7 @@ var PayloadPanel = (function() {
       payloadColumn: '#payload-column',
       payloadInitial: '#payload-initial-message',
       payloadRequest: '#payload-request',
-      payloadResponse: '#payload-response'
+      //payloadResponse: '#payload-response'
     },
     payloadTypes: {
       request: 'request',
@@ -104,22 +104,18 @@ var PayloadPanel = (function() {
       'children': [{
         // <div class='header-text'>
         'tagName': 'div',
-        'text': isRequest ? 'User input' : 'Watson understands',
+        'text': isRequest ? 'Tos y Resfriado Común' : '',
         'classNames': ['header-text']
       }, {
         // <div class='code-line responsive-columns-wrapper'>
         'tagName': 'div',
         'classNames': ['code-line', 'responsive-columns-wrapper'],
-        'children': [{
-          // <div class='line-numbers'>
-          'tagName': 'pre',
-          'text': createLineNumberString((payloadPrettyString.match(/\n/g) || []).length + 1),
-          'classNames': ['line-numbers']
-        }, {
+        'children': [ {
           // <div class='payload-text responsive-column'>
           'tagName': 'pre',
           'classNames': ['payload-text', 'responsive-column'],
-          'html': payloadPrettyString
+          'text': '<p> </p> <p>La tos y los resfriados son expermientados por la mayoría de los adultos de dos a cuatro veces al año y con mayor frecuencia por los niños. No es necesario que usted consulte a un médico si usted está teniendo síntomas de una infección viral sin complicaciones en el tracto respiratorio (orejas, nariz y senos paranasales, garganta y pecho). Por otro lado, su médico debe evaluar si usted tiene síntomas que sugieren una causa más seria, como una infección bacteriana, o si sus síntomas no son manejables con remedios sin receta o el paso del tiempo. El propósito de esta guía es revisar sus síntomas de tos y resfriado e identificar patrones específicos de enfermedad para los cuales se recomienda la evaluación de un médico.</p> <p>Usted encontrará una serie de preguntas sobre sus síntomas a medida que avanza a través de este programa. Sus respuestas a estas preguntas le ayudarán a dar sugerencias más pertinentes para usted.</p> <p>Las infecciones del tracto respiratorio superior e inferior suelen causar varios síntomas simultáneamente. Aún así, un síntoma probablemente domina su enfermedad. La identificación de su síntoma más dominante puede ser una buena manera para que comencemos.</p>'
+
         }]
       }]
     };
@@ -157,16 +153,5 @@ var PayloadPanel = (function() {
     return convert;
   }
 
-  // Used to generate a string of consecutive numbers separated by new lines
-  // - used as line numbers for displayed JSON
-  function createLineNumberString(numberOfLines) {
-    var lineString = '';
-    var prefix = '';
-    for (var i = 1; i <= numberOfLines; i++) {
-      lineString += prefix;
-      lineString += i;
-      prefix = '\n';
-    }
-    return lineString;
-  }
+
 }());

@@ -21,7 +21,7 @@ div {
   width: 3.125rem;
   height: 3.125rem;
   border-radius: 1.5625rem;
-  background: #AB72F8;
+  background: #52F8FE;
   top: 0.3125rem;
   right: 0.3125rem;
   line-height: 3.125rem;
@@ -245,17 +245,14 @@ input:-moz-placeholder {
   opacity: 0;
 }
 
-textarea{
-	width:100vw !important;
-}
 
 #payload-column {
-  font-family: Monaco, monospace;
-  font-size: 0.75rem;
+  font: oblique bold;
+  font-size: 0.97rem;
   letter-spacing: 0;
   line-height: 1.125rem;
-  background-color: #23292A;
-  color: #fff;
+  background-color: #CEF4FC;
+  color: #000000;
   overflow-x: auto;
 
   width: 45%;
@@ -270,21 +267,24 @@ textarea{
 }
 
 #payload-column .header-text, #payload-column #payload-initial-message {
-  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: oblique bold;
   font-size: 1.125rem;
-  color: #9E9E9E;
+  font-weight: bold;
+  color: #fff;
   letter-spacing: 0.01875rem;
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383D3E;
+  text-align: center;
 }
 
 .hide {
   display: none;
 }
 
-.payload .line-numbers, .payload .payload-text {
+.payload .payload-text {
   padding: 0.5rem;
+  white-space:pre-line;
 }
 
 .line-numbers {

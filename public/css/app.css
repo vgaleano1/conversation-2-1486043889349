@@ -239,15 +239,14 @@ input:-moz-placeholder {
 
 #textInputDummy {
   position:absolute;
-  white-space:pre-line !important;
-  text-align: justify;
+  white-space:pre-line;
   top: 0;
   left: -1000%;
   opacity: 0;
 }
 
 textarea{
-	width: 100vw !important;
+	width:100vw !important;
 }
 
 #payload-column {
@@ -278,7 +277,6 @@ textarea{
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383D3E;
-  text-align: center;
 }
 
 .hide {
@@ -287,7 +285,6 @@ textarea{
 
 .payload .line-numbers, .payload .payload-text {
   padding: 0.5rem;
-  white-space: pre-line;
 }
 
 .line-numbers {
